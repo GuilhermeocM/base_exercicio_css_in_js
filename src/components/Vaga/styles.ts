@@ -11,6 +11,12 @@ export const VagaEstilo = styled.li`
   &:hover {
     background-color: ${(props) => props.theme.corPrincipal};
     color: ${(props) => props.theme.corSecundaria};
+
+    a {
+      border-color: ${(props) => props.theme.corPrincipal};
+      background-color: ${(props) => props.theme.corSecundaria};
+      color: ${(props) => props.theme.corPrincipal};
+    }
   }
 
   h3 {
@@ -30,12 +36,6 @@ export const VagaEstilo = styled.li`
     font-size: 14px;
     border-radius: 8px;
     text-align: center;
-
-    &:hover {
-      border-color: ${(props) => props.theme.corPrincipal};
-      background-color: ${(props) => props.theme.corSecundaria};
-      color: ${(props) => props.theme.corPrincipal};
-    }
 
     @media (max-width: 768px) {
       display: block;
